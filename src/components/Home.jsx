@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import OctopusBay from '../artifacts/contracts/Nft.sol/OctopusBay.json';
 import { getAccountPath } from "ethers/lib/utils";
-
+import "../App.css";
+import "../css/Collection.css";
 // адресът на solididity contract
 const contractAddress = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0';
 
@@ -33,12 +34,12 @@ export function Home() {
       <WalletBalance />
 
       <h1>Octopus Bay NFT Collection</h1>
-      <div className="container">
+      <div className="collection">
         <div className="row">
           {Array(totalMinted + 1)
             .fill(0)
             .map((_, i) => (
-              <div key={i} className="col-sm">
+              <div key={i} className="col">
                 <NFTImage tokenId={i} getCount={getCount} />
               </div>
             ))}
@@ -81,10 +82,10 @@ export function Home() {
         alert(uri);
       }
       return (
-        <div className="card" style={{ width: '18rem' }}>
-          <img className="card-img-top" src={isMinted ? imageURI : 'images/placeholder.png'}></img>
-          <div className="card-body">
-            <h5 className="card-title">ID #{tokenId}</h5>
+        <div className="collection-item">
+          <img className="collection-item-img" src={isMinted ? imageURI : 'images/placeholder.png'}></img>
+          <div className="collection-item-body">
+            <h5 className="collection-item__title">ID #{tokenId}</h5>
             {!isMinted ? (
               <button className="btn btn-primary" onClick={mintToken}>
                 Mint

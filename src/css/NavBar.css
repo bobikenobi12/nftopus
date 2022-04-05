@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    justify-content: space-evenly;
+    background-color: #1abc9c;
+}
+.navbar-item {
+    font-family: inherit;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.navbar-item--browse {
+    font-size: 18px;
+    background-color: #5643FD;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
