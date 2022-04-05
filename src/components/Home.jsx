@@ -1,4 +1,5 @@
 import { WalletBalance } from "./WalletBalance";
+import { Navbar } from "./NavBar";
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import OctopusBay from '../artifacts/contracts/Nft.sol/OctopusBay.json';
@@ -31,6 +32,7 @@ export function Home() {
 
   return (
     <div>
+      <Navbar/>
       <WalletBalance />
 
       <h1>Octopus Bay NFT Collection</h1>
