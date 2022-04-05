@@ -1,19 +1,26 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Greeter", function () {
-  it("Should return the new greeting once it's changed", async function () {
-    const Greeter = await ethers.getContractFactory("Greeter");
-    const greeter = await Greeter.deploy("Hello, world!");
-    await greeter.deployed();
+describe("MyNFT", function () {
+  it("Should mint and transfer an NFT to someone", async function () {
+    const OctopusBay = await ethers.getContractFactory("OctopusBay");
+    const octopusbay = await OctopusBay.deploy();
+    await octopusbay.deployed();
 
-    expect(await greeter.greet()).to.equal("Hello, world!");
+    const recipient = '0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266';
+    const metadataURI = 'cid/test.png';
 
-    const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
+    let balance = await octopusbay.balanceOf(recipient);
+    expect(balance).to.equal(0);
 
-    // wait until the transaction is mined
-    await setGreetingTx.wait();
+    const newlyMintedToken = await octopusbay.payToMint(recipient, metadataURI, { value: ethers.utils.parseEther('0.05') });
 
-    expect(await greeter.greet()).to.equal("Hola, mundo!");
+    await newlyMintedToken.wait();
+
+    balance = await octopusbay.balanceOf(recipient)
+    expect(balance).to.equal(1);
+
+    expect(await octopusbay.isContentOwned(metadataURI)).to.equal(true);
+    const newlyMintedToken2 = await octopusbay.payToMint(recipient, 'foo', { value: ethers.utils.parseEther('0.05') });
   });
 });
