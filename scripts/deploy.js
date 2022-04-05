@@ -3,9 +3,9 @@ const hre = require("hardhat");
 async function main() {
 
   const OctopusBay = await hre.ethers.getContractFactory("OctopusBay");
-  const octopusBay = await Greeter.deploy();
+  const octopusBay = await OctopusBay.deploy();
 
-  await octopusbay.deployed();
+  await octopusBay.deployed();
 
   console.log("Nft deployed to:", octopusBay.address);
 }
