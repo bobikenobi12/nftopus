@@ -9,3 +9,16 @@ body {
   text-align: center;
   min-height: 100vh;
 }
+.wallet-balance__button {
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: rgb(32, 129, 226);
+  border: 1px solid rgb(32, 129, 226);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
