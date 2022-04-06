@@ -1,5 +1,5 @@
-import { WalletBalance } from "./WalletBalance";
 import { Navbar } from "./NavBar";
+import { CollectionProfile } from "./CollectionProfile";
 import { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import OctopusBay from '../artifacts/contracts/Nft.sol/OctopusBay.json';
@@ -7,7 +7,7 @@ import { getAccountPath } from "ethers/lib/utils";
 import "../App.css";
 import "../css/Collection.css";
 // адресът на solididity contract
-const contractAddress = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0';
+const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
 
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -31,11 +31,10 @@ export const Explore = () => {
   };
 
   return (
-    <div>
+    <>
       <Navbar/>
-      <WalletBalance />
-
-      <h1>Octopus Bay NFT Collection</h1>
+      <CollectionProfile/>
+      <div>
       <div className="collection">
         <div className="row">
           {Array(totalMinted + 1)
@@ -47,7 +46,8 @@ export const Explore = () => {
             ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
   
