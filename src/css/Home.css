@@ -1,0 +1,15 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+}
+.home-mainText {
+    font-size: 45px;
+    color: rgb(4, 17, 29);
+    width: 580px;
+}
+.home-secondaryText {
+    color: #353840;
+    font-size: 24px;
+    width: 400px;
+}

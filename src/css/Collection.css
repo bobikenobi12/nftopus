@@ -1,22 +1,28 @@
 .collection {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 50px;
   justify-content: center;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+    justify-content: center;
+}
 .collection-item {
   display: flex;
   flex-direction: column;
-  width: 256px;
+  width: 377px;
   text-align: center;
   border: 1px solid #808080;
   border-radius: 4px;
 }
 .collection-item-img {
-  width: 256px;
-  height: 256px;
+  width: 377px;
+  height: 504px;
 }
 .collection-item__title {
   font-size: 16px;

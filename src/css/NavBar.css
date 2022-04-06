@@ -2,14 +2,32 @@
     display: flex;
     align-items: center;
     padding: 10px 0px;
-    justify-content: space-evenly;
-    background-color: #1abc9c;
+    background-color: #fff;
+    justify-content: space-around;
+}
+.navbar-logo {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+    font-family: inherit; 
+}
+.navbar-logo-img {
+    width: 40px;
+    height: 40px;
+}
+.navbar-logo-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(4, 17, 29);
 }
 .navbar-item {
     font-family: inherit;
-    color: #fff;
     border: none;
     cursor: pointer;
+    color: #04111DBF;
+    font-weight: 600;
+    font-size: 16px;
 }
 .navbar-item--browse {
     font-size: 18px;
