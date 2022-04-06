@@ -1,6 +1,6 @@
 # Nftopus
 
-[Logo](https://github.com/bobikenobi12/nftopus/images/LOGO.png)
+## [Logo](https://github.com/bobikenobi12/nftopus/images/LOGO.png)
 This project contains a web3 app and a smart contract for minting NFTS.
 
 ## Requirements
