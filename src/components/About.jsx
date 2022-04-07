@@ -21,9 +21,9 @@ export const About = () => {
         </div>
         <div className="about-body">
           <h1 className="about-body-description">
-            Сайт за mint-ване на наша собствена колекция от NFT-та на име
-            Octopus Bay. Аксесоарите на колекцията се разделят на осем вида,
-            като всеки елемент от тях е с различна рядкост.
+            A website for minting our own collection of NFTs named Octopus Bay.
+            The accessories of the collection are divided into eight types, as
+            each element of them is of different rarity.
           </h1>
           <h1 className="title">Our Team</h1>
           <div className="team">
@@ -32,7 +32,7 @@ export const About = () => {
                 img={borislav}
                 name={"Borislav Borisov"}
                 description={
-                  "Измислил идеята за проекта, качил готовите NFT-та в IPFS, направил уебсайта и интегрирал metamask в него."
+                  "He came up with the idea for the project, uploaded the finished NFTs to IPFS, made the website and integrated metamask into it."
                 }
               />
             </div>
@@ -41,7 +41,7 @@ export const About = () => {
                 img={martinov}
                 name={"Gabriel Martinov"}
                 description={
-                  "Работил по изработването на NFT колекцията.Измислил идеята и базовия модел на октопода. Направил презентацията и плаката към проекта. Подпомогнал за дизайна на уебсайта."
+                  "He worked on the NFT collection, drew the octopus model, made the presentation and the poster for the project, helped design the website."
                 }
               />
             </div>
@@ -50,13 +50,13 @@ export const About = () => {
                 img={kris}
                 name={"Kristian Kirilov"}
                 description={
-                  "Реализирал идеите за асети на екипа, измислил дизайна на октопода, генерирал NFT-та, изработил видео презентацията за журито"
+                  "He worked on NFTs, generated a collection of 200, made a video for the project."
                 }
               />
             </div>
           </div>
         </div>
       </div>
-      </>
+    </>
   );
 };

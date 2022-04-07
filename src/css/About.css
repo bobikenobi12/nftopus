@@ -1,12 +1,4 @@
-html {
-    position: relative;
-    min-height: 100%;
-}
-.pageContentWrapper{
-    margin-bottom:100px;
-  } 
 .about {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +9,10 @@ html {
   justify-content: center;
   width: 100%;
   padding: 200px 0px;
+  background-image: url("../about-us-header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .about-head-span {
   color: #353840;
