@@ -21,7 +21,7 @@ export const Navbar = () => {
         </div>
         <div>
           <Link to="/about" className="navbar-item">
-            About us
+            About Us
           </Link>
         </div>
         <div>

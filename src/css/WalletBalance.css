@@ -1,13 +1,19 @@
 body {
   height: 100vh;
 }
+.separator {
+  margin: 0 auto;
+  width: 90%;
+  height: 1px;
+  background-color: #353840;
+}
 .wallet-balance {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  margin-top: 300px;
 }
 .wallet-balance__button {
   border-radius: 10px;

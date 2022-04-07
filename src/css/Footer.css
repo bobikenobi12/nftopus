@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(24, 104, 183);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 0px;
+  gap: 800px;
+}
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}

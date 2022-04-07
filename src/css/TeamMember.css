@@ -1,0 +1,17 @@
+.team-member {
+  display: flex;
+  flex-direction: column;
+}
+.team-member-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.team-member-name {
+  font-size: 35px;
+  color: rgb(4, 17, 29);
+}
+.team-member-description {
+  color: #353840;
+  font-size: 21px;
+}

@@ -1,4 +1,5 @@
 import { Navbar } from "./NavBar";
+import { Footer } from "./Footer";
 import { Outlet, Link } from "react-router-dom";
 import "../App.css";
 import "../css/Home.css";
@@ -8,6 +9,7 @@ export const Home = () => {
     <>
     {/* <div className="bg-image"></div> */}
       <Navbar />
+      <div className="separator"></div>
       <div className="home">
         <div className="home-left">
           <h1 className="home-mainText">
@@ -31,6 +33,7 @@ export const Home = () => {
           </div>
         </Link>
       </div>
+      <Footer />
     </>
   );
 };

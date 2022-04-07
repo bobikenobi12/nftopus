@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ethers } from "ethers";
 import { Navbar } from "./NavBar";
+import { Footer } from "./Footer";
 import "../css/WalletBalance.css";
 import "../App.css";
 export const WalletBalance = () => {
@@ -18,10 +19,12 @@ export const WalletBalance = () => {
     return (
         <>
         <Navbar />
+        <div className="separator"></div>
         <div className="wallet-balance">
             <h1 className="wallet-balance__text">Your Balance: {balance}</h1>
             <button className="wallet-balance__button" onClick={getBalance}>Show my balance</button>
         </div>
+        <Footer />
         </>
     )
 }

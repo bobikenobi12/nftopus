@@ -1,0 +1,53 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+.pageContentWrapper{
+    margin-bottom:100px;
+  } 
+.about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 200px 0px;
+}
+.about-head-span {
+  color: #353840;
+  font-size: 25px;
+}
+.about-head-h1 {
+  font-size: 45px;
+  color: rgb(4, 17, 29);
+}
+.about-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.about-body-description {
+  margin-top: 30px;
+  font-size: 25px;
+  padding: 0px 400px;
+  text-align: center;
+  color: rgb(4, 17, 29);
+}
+.title {
+  font-size: 45px;
+  color: rgb(4, 17, 29);
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  padding: 0px 300px;
+  gap: 40px;
+}

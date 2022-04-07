@@ -17,18 +17,42 @@
     height: 40px;
 }
 .navbar-logo-text {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     color: rgb(4, 17, 29);
 }
+.navbar-logo-text:hover {
+   color: rgb(24, 104, 183);
+}
 .navbar-item {
+    position: relative;
     font-family: inherit;
     border: none;
     cursor: pointer;
     color: #04111DBF;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
+}
+.navbar-item::after {
+    display: block;
+    position: absolute;
+    width: 0;
+    content:"";
+    background-color: rgb(24, 104, 183);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    left: 0;
+    bottom: -10px;
+}
+.navbar-item:hover {
+    color: rgb(24, 104, 183);
+}
+.navbar-item:hover::after {
+    width: 100%;
+    height:1px;
 }
 .navbar-item--browse {
     font-size: 18px;
